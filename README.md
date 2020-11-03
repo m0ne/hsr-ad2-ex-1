@@ -7,6 +7,7 @@ Zeichnen Sie den binären Suchbaum, falls diese Elementliste
 
 wie oben sortiert ist
 
+```
 digraph BST {
     node [fontname="Arial"];
     null0 [shape=point];
@@ -38,6 +39,8 @@ digraph BST {
     "i" -> null8
     "i" -> null9
 }
+```
+
 
 ![a](images/a.svg)
 
@@ -48,6 +51,7 @@ wie ändert sich der binäre Suchbaum, falls zyklisch rotiert wird
 
 In discrete mathematics, tree rotation is an operation on a binary tree that changes the structure without interfering with the order of the elements. A tree rotation moves one node up in the tree and one node down.
 
+```
 digraph BST {
     node [fontname="Arial"];
     "b" -> "a";
@@ -71,6 +75,7 @@ digraph BST {
     "h" -> null7
     "h" -> "i"
 }
+```
 
 ![b](images/b.svg)
 
@@ -79,6 +84,7 @@ digraph BST {
 
 umgekehrt sortiert ist:
 
+```
 digraph BST {
     node [fontname="Arial"];
     "i" -> "h";
@@ -110,6 +116,7 @@ digraph BST {
     "a" -> null8
     "a" -> null9
 }
+```
 
 ![c](images/c.svg)
 
@@ -117,6 +124,7 @@ digraph BST {
 
 folgendermassensortiertist:{a,i,b,h,c,g,d,f,e}
 
+```
 digraph BST {
     node [fontname="Arial"];
     null0 [shape=point];
@@ -148,6 +156,7 @@ digraph BST {
     null9 [shape=point];
     "e" -> null9
 }
+```
 
 ![d](images/d.svg)
 
@@ -168,6 +177,7 @@ binären Suchbaum einfügt (sukzessive Anwendung von TREE-INSERT) und dann durch
 
 Inorder traversal of BST prints it in ascending order. The only trick is to modify recursion termination condition in standard Inorder Tree Traversal.
 
+```
 def printSorted(arr, start, end): 
     if start > end:  
         return
@@ -182,6 +192,7 @@ if __name__ == '__main__':
     arr = [4, 2, 5, 1, 3]  
     arr_size = len(arr)  
     printSorted(arr, 0, arr_size - 1)
+```
 
 Best Case: O(log n)
 Worst Casse: O(n log n)
