@@ -1,5 +1,11 @@
 # ex 1
+
+Gegeben sei folgende Liste von Elementen, die in einen binären Suchbaum eingetragen werden sollen: { a , b , c , d , e , f , g , h , i }
+Zeichnen Sie den binären Suchbaum, falls diese Elementliste
+
 ## ex (a)
+
+wie oben sortiert ist
 
 digraph BST {
     node [fontname="Arial"];
@@ -35,8 +41,10 @@ digraph BST {
 
 ![a](images/a.svg)
 
-
 ## ex (b)
+
+wie ändert sich der binäre Suchbaum, falls zyklisch rotiert wird
+( { b , c , d , e , f , g , h , i , a } ... )
 
 In discrete mathematics, tree rotation is an operation on a binary tree that changes the structure without interfering with the order of the elements. A tree rotation moves one node up in the tree and one node down.
 
@@ -68,6 +76,8 @@ digraph BST {
 
 
 ## ex (c)
+
+umgekehrt sortiert ist:
 
 digraph BST {
     node [fontname="Arial"];
@@ -105,6 +115,8 @@ digraph BST {
 
 ## ex(d)
 
+folgendermassensortiertist:{a,i,b,h,c,g,d,f,e}
+
 digraph BST {
     node [fontname="Arial"];
     null0 [shape=point];
@@ -140,6 +152,9 @@ digraph BST {
 ![d](images/d.svg)
 
 ## ex(e)
+
+Mit welcher Reihenfolge erhält man einen möglichst ausgeglichenen Baum?
+Hinweis: Es gibt mehrere korrekte Lösungen.
 
 gleichmässig aufgeteilt, beginnend in der mitte.
 
