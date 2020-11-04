@@ -3,8 +3,7 @@
  * Version: Wed Sep  9 18:48:52 CEST 2020
  */
 
-package uebung01.as.aufgabe04;
-
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -38,10 +37,25 @@ public class BinarySearchArrayTest {
    */
   public void add(int lower, int upper, int content) {
     
-    // TODO Implement here...
-    
+    if (lower == upper) {
+        if (content >= arrayList.get(lower)){
+            arrayList.add(lower+1, content);
+        } else {
+            arrayList.add(lower, content);
+        }
+
+        return; 
+    }
+
+    int middle = ( lower + upper) / 2;
+
+    if (content > arrayList.get(middle)){
+        add(middle+1, upper, content);
+    }else {
+        add(lower, middle, content);
+    }
   }
-  
+    
   public boolean verify(int size, boolean exiting) {
     int arrayListSize = arrayList.size();
     if (arrayListSize != size) {

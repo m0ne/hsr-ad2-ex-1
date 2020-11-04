@@ -3,8 +3,6 @@
  * Version: Wed Sep  9 18:48:52 CEST 2020
  */
 
-package uebung01.as.aufgabe04;
-
 import static org.junit.Assert.assertTrue;
 
 import java.util.Arrays;
