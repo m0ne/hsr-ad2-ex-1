@@ -195,8 +195,8 @@ if __name__ == '__main__':
     printSorted(arr, 0, arr_size - 1)
 ```
 
-Best Case: O(log n)
-Worst Casse: O(n log n)
+Best Case: O(n log n) (already properly sorted)
+Worst Casse: O(squared(n)
 
 # 3
 
