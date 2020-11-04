@@ -46,7 +46,7 @@ digraph BST {
 
 ## ex (b)
 
-wie ändert sich der binäre Suchbaum, falls zyklisch rotiert wird
+wie ändert sich der binäre Suchbaum, falls zyklisch rotiert wird:
 ( { b , c , d , e , f , g , h , i , a } ... )
 
 In discrete mathematics, tree rotation is an operation on a binary tree that changes the structure without interfering with the order of the elements. A tree rotation moves one node up in the tree and one node down.
@@ -122,7 +122,8 @@ digraph BST {
 
 ## ex(d)
 
-folgendermassensortiertist:{a,i,b,h,c,g,d,f,e}
+folgendermassen sortiert ist: 
+{a,i,b,h,c,g,d,f,e}
 
 ```
 digraph BST {
@@ -196,3 +197,19 @@ if __name__ == '__main__':
 
 Best Case: O(log n)
 Worst Casse: O(n log n)
+
+# 3
+
+Nehmen wir an, wir haben Zahlen zwischen 1 und 1000 in einem binären Suchbaum gespeichert und wir suchen die Zahl 363.
+Folgend sind mehrere Suchpfade aufgelistet (Suchpfad: Knoten welche traversiert werden):
+
+a) 2 257 401 398 330 344 397 363 *(correct)*
+b) 924 220 911 244 898 258 362 363 *(correct)* 
+c) 925 202 911 240 918 245 363 *(false 918)*
+d) 399 387 219 266 382 381 278 363 *(correct)*
+e) 935 278 347 681 299 392 358 363 *(false 299)*
+
+Welche der obigen Suchpfade können keine gültigen Suchpfade sein? 
+
+Hinweis: Stellen Sie den Suchpfad mit einer Skizze dar.
+
